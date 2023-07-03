@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OPFD</title>
+  <style>
+    body {
+      background-image: url({{ url_for('static',filename='online_img.jpeg') }});
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align:center;
+    }
+
+    .heading {
+      font-size: 48px;
+      color: rgb(0, 219, 248);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      font-size: 24px;
+      color: rgb(0, 0, 0);
+      margin-bottom: 40px;
+    }
+
+    .options {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .option-box {
+      display: inline-block;
+      background-color: rgb(231, 219, 219);
+      padding: 10px 20px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Online Payment Fraud Detection</h1>
+    <p class="content">The predicted fraud for the online payment is {{ prediction_text }}</p>
+  </div>
+
+  <div class="options">
+    <div class="option-box" ><a href="/">Home</a></div>
+    <div class="option-box"> <a href="/predict">Predict</a></div>
+  </div>
+</body>
+</html>
