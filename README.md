@@ -112,4 +112,3 @@ This repository does not specify a license. Please contact the owner for usage p
 - IBM Watson for ML support
 - Scikit-learn for model training
 - Flask for backend web development
-- 
